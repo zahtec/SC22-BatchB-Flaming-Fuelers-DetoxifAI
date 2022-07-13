@@ -8,13 +8,13 @@ DetoxifAI's main goal is protect people who arent knowledgable about the species
 
 ## ⚙️ How does it work?
 
-DetoxifAI uses the [YoloV5]() computer vision model to classify certain species using images uploaded by the user. Our AI was created like so:
+DetoxifAI uses the [YoloV5](https://github.com/ultralytics/yolov5) computer vision model to classify certain species using images uploaded by the user. Our AI was created like so:
 
--   Web scraping images of specific species of mushroom and snake we wanted to classify using [serp]()
+-   Web scraping images of specific species of mushroom and snake we wanted to classify using [serp](https://serpapi.com)
 -   Label and filter through data found so we can get the images we will use for **training our model**
 -   Export our data and **augment it** so that it creates a stronger final model
--   Train the model using [Google Colab]() and [Kaggle]() for superior speed GPUs. Adjusting hyperparameters and input data accordingly
--   Create and frontend and also a backed using [flask]() for serving it to users, while also linking up our backend to [YoloV5]() and classifying each image uploaded by a user
+-   Train the model using [Google Colab](https://colab.research.google.com) and [Kaggle](https://www.kaggle.com) for superior speed GPUs. Adjusting hyperparameters and input data accordingly
+-   Create and frontend and also a backed using [flask](https://flask.palletsprojects.com) for serving it to users, while also linking up our backend to [YoloV5](https://github.com/ultralytics/yolov5) and classifying each image uploaded by a user
 
 ## 🚀 Usage
 
@@ -24,7 +24,7 @@ To use DetoxifAI first clone this repo by running
 git clone https://github.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI.git
 ```
 
-Then change your terminal directory to the `SC22-BatchB-Flaming-Fuelers-DetoxifAI` folder and run (assuming you already have [Python]() installed)
+Then change your terminal directory to the `SC22-BatchB-Flaming-Fuelers-DetoxifAI` folder and run (assuming you already have [Python](https://www.python.org/) installed)
 
 ```sh
 python ./app/main.py
@@ -38,7 +38,7 @@ python3 ./app/main.py
 
 This will intiate a flask server that will bind the URL to `localhost:1234`. Open your browser, go to this URL, and proceed to upload your images & get your results!
 
-This project is also able to run on [CoCalc]() and has been tested on there
+This project is also able to run on [CoCalc](https://cocalc.com/) and has been tested on there
 
 ## 📈 Stats
 
