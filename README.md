@@ -50,6 +50,14 @@ More information can be found on this projects about page on the frontend, if yo
 
 **Recall:** `~0.98`
 
-### Confusion Matrix and other images
+### Confusion Matrix and Roboflow image totals
 
-[![Deploy a Web Project with Flask](https://img.youtube.com/vi/JUb-PpejA7w/0.jpg)](https://youtu.be/JUb-PpejA7w 'Deploy a Web Project with Flask')
+![DetoxifAI confusion matrix](https://raw.githubusercontent.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI/main/app/static/images/confusion.png)
+
+![DetoxifAI roboflow image totals](https://raw.githubusercontent.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI/main/app/static/images/dataset.png)
+
+![DetoxifAI roboflow image totals](https://raw.githubusercontent.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI/main/app/static/images/dataset.png)
+
+## 🙂 Thanks for viewing!
+
+This was made at [Stanford AI Camp](https://www.ai-camp.org). Where seers become beleivers, get a chance to participate in a super cool camp and get a possible intership at AI Camp, linked above!
