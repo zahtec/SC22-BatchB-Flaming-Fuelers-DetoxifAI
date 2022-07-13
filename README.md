@@ -1,6 +1,6 @@
 # ☠️ DetoxifAI
 
-_Detecting venemous or posionous species in the wild_
+_Detecting venomous or poisonous species in the wild_
 
 ## 👀 What is it?
 
