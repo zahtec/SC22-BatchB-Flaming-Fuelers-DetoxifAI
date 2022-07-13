@@ -1,7 +1,8 @@
 @keyframes spin {
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(-360deg);
+
+  }
 }
 
 * {
@@ -37,6 +38,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 1rem 5%;
+    overflow: hidden;
 }
 
 a {
@@ -69,11 +71,22 @@ a {
     cursor: pointer;
 }
 
+
 header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     height: 80px;
+}
+
+.head-button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-button:nth-child(2) {
+    margin-left: 1rem;
 }
 
 .head-button > span {
@@ -88,6 +101,12 @@ header {
     user-select: none;
 }
 
+.head-button > h1 {
+    font-size: 1.5rem;
+    color: rgb(85, 128, 213);
+    filter: drop-shadow(0 0 0.1rem rgb(85, 128, 213))
+}
+
 .head-button > svg {
     height: 5rem;
     width: 5rem;
@@ -100,16 +119,17 @@ header {
     align-items: center;
     flex-direction: column;
     border: dashed 5px white;
-    height: 35rem;
+    height: 25rem;
     max-width: 1200px;
     max-height: 595px;
     border-radius: 5px;
     transition: border 0.3s ease-out, background-color 0.3s ease-out, filter 0.3s ease-out;
-    margin: 1rem auto;
+    margin: 1rem auto 1rem auto;
     font-size: 1rem;
     overflow: hidden;
     position: relative;
     scrollbar-width: thin;
+    padding: 0 1rem;
     scrollbar-color: white transparent;
 }
 
@@ -141,6 +161,8 @@ header {
 }
 
 #upload > h1 {
+    text-align: center;
+    font-size: 1rem;
     transition: opacity 0.3s ease-out;
 }
 
@@ -174,6 +196,7 @@ header {
 #left {
     width: 100%;
     height: 40%;
+    margin-top: 2em;
     max-width: 530px;
     align-items: center;
     justify-content: space-evenly;
@@ -196,9 +219,10 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 15.5em 0.5em 0 0.5em;
+    padding: 3em 0.5em 0 0.5em;
     width: 100%;
-    height: 60%;
+    padding-bottom: 1rem;
+    height: max-content;
 }
 
 #right > h1:not(:first-of-type) {
@@ -235,6 +259,25 @@ header {
 
 .item span {
     margin-right: 0.3em;
+}
+
+#wrapper-error {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    padding: 1rem 1.5rem;
+    transition: opacity 0.3s ease-out;
+    z-index: -1;
+    text-align: center;
+}
+
+#wrapper-error > span {
+    font-size: 4em;
 }
 
 #warn {
@@ -305,7 +348,7 @@ footer {
 
 @media (min-width: 550px) {
     #upload {
-        margin: 1.5rem auto;
+        margin: 2rem auto;
     }
 
     #warn {

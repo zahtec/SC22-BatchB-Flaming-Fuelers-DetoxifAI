@@ -18,34 +18,46 @@ const uploader = f => {
         form.style.display = 'none';
         text.innerHTML = 'Uploading...';
         icon.innerHTML = 'sync';
+        icon.classList.remove('done');
+        text.classList.remove('done');
         icon.style.animation = 'spin 2s linear infinite';
         icon.style.animationPlayState = 'running';
-        text.classList.remove('done');
-        icon.classList.remove('done');
 
-        // upload to backend simulated
-        const data = new FormData();
+        const data = new FormData()
         data.append('file', f);
-        fetch('/', {
+        fetch('/49811120-694c-43f1-9267-605bd2af9ca9/port/12345/', {
             method: 'POST',
-            body: data,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
+            body: data
         })
             .then(async res => {
+                if (res.status === 300) {
+                    icon.style.opacity = 0;
+                    text.style.opacity = 0;
+                    setTimeout(() => {
+                        const wrapper = document.getElementById('wrapper-error');
+                        wrapper.style.display = 'flex';
+                        icon.style.display = 'none';
+                        text.style.display = 'none';
+                        setTimeout(() => {
+                          wrapper.style.opacity = 1;
+                        }, 200);
+                    }, 200);
+                    return;
+                }
+
                 const d = await res.json();
                 document.querySelector('#left > img:first-child').src = d.image;
                 document.querySelector('#left > img:last-child').src = d.upload;
-                document.querySelector('#right > em').innerHTML = d.type;
+                document.querySelector('#right > em').innerHTML = `${d.type} - ${d.confidence} Confident`;
                 document.querySelector('#right > h1').innerHTML = d.species;
                 document.querySelector('#right > p').innerHTML = d.description;
                 document.querySelector('#first-param > span').innerHTML = d.poisonous ? 'check' : 'close';
                 document.querySelector('#second-param > div > span').innerHTML = d.type === 'snake' ? 'sentiment_very_dissatisfied' : 'whatshot';
-                document.querySelector('#second-param > span').innerHTML = d.toxic ? 'check' : 'close';
+                document.querySelector('#second-param > div > p').innerHTML = d.type === 'snake' ? 'Aggresive' : 'Cookable';
+                document.querySelector('#second-param > span').innerHTML = d.cookable ? 'check' : 'close';
                 document.getElementById('first-link').href = d.image;
                 document.getElementById('second-link').href = d.article;
-                document.getElementById('steps').innerText = d.steps;
+                document.getElementById('steps').innerText = d.steps ? d.steps : 'No preventative steps can be taken.';
                 document.getElementById('bitten').innerText = d.bitten;
 
                 icon.style.opacity = 0;
@@ -62,9 +74,20 @@ const uploader = f => {
                 upload.style.backgroundColor = `rgb(${darker[0]}, ${darker[1]}, ${darker[2]})`;
                 upload.style.filter = `drop-shadow(0px 0px 10px rgb(${color[0]}, ${color[1]}, ${color[2]}))`;
             })
-            .catch(() => {
-                alert('Error uploading file - Incorrect format or other error');
-                location.reload();
+            .catch((e) => {
+                console.log(e);
+                icon.style.opacity = 0;
+                text.style.opacity = 0;
+                setTimeout(() => {
+                    const wrapper = document.getElementById('wrapper-error');
+                    wrapper.style.display = 'flex';
+                    icon.style.display = 'none';
+                    text.style.display = 'none';
+                    document.querySelector('#wrapper-error > h1').innerHTML = 'An Error occured. Please reload and try again'
+                    setTimeout(() => {
+                        wrapper.style.opacity = 1;
+                    }, 200);
+                }, 200);
             });
     }, 500);
 };
@@ -96,6 +119,13 @@ const dragLeave = () => {
 
 const drop = e => {
     e.preventDefault();
+
+    if (!['image/png', 'image/jpg', 'image/jpeg'].includes(e.dataTransfer.files[0].type)) {
+        icon.classList.remove('drag');
+        form.classList.remove('drag');
+        return
+    }
+
     uploader(e.dataTransfer.files[0]);
 };
 

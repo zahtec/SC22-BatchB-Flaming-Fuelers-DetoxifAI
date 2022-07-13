@@ -10,9 +10,9 @@
 
         <meta name="og:title" content="Home - DetoxifAI" />
         <meta name="og:description" content="An advanced neural network to detect different snake and mushroom species and provide vital information. Created by Toryn, Arhant, Ayush, Michael, Sravya, and Jacky at AI Camp." />
-        <meta name="og:url" content="https://detoxifai.ai-camp.org" />
-        <meta name="og:image" content="https://detoxifai.ai-camp.org/icon.png" />
-        <meta name="og:image:secure_url" content="https://detoxifai.ai-camp.org/icon.png" />
+        <meta name="og:url" content="images/icon.png" />
+        <meta name="og:image" content="images/icon.png" />
+        <meta name="og:image:secure_url" content="images/icon.png" />
         <meta name="og:image:width" content="211" />
         <meta name="og:image:height" content="192" />
         <meta name="og:image:alt" content="DetoxifAI logo" />
@@ -22,7 +22,7 @@
         <meta name="twitter:creator" content="@AICampOfficial" />
         <meta name="twitter:title" content="Home - DetoxifAi" />
         <meta name="twitter:description" content="An advanced neural network to detect different snake and mushroom species and provide vital information. Created by Toryn, Arhant, Ayush, Michael, Sravya, and Jacky at AI Camp." />
-        <meta name="twitter:image" content="https://detoxifai.ai-camp.org/icon.png" />
+        <meta name="twitter:image" content="images/icon.png" />
 
         <meta name="theme-color" content="rgb(24, 24, 24)" />
 
@@ -32,13 +32,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-        <link rel="icon" sizes="any" href="../images/icon.png" />
-        <link rel="apple-touch-icon" sizes="any" href="../images/icon.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="any" href="../images/icon.png" />
+        <link rel="icon" sizes="any" href="images/iconnew.png" />
+        <link rel="apple-touch-icon" sizes="any" href="images/icon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="any" href="images/icon.png" />
     </head>
     <body>
         <header class="flex">
-            <a class="head-button flex" href="about">
+            <a class="head-button flex" href="about.html">
                 <span class="material-icons-round">info</span>
             </a>
             <a href="" class="head-button flex">
@@ -70,27 +70,34 @@
                         </filter>
                     </defs>
                 </svg>
+                <h1>
+                  DetoxifAI
+              </h1>
             </a>
             <a class="head-button flex" href="https://www.ai-camp.org/" target="_blank">
-                <img src="../aicamp.png" draggable="false" />
+                <img src="images/aicamp.png" draggable="false" />
             </a>
         </header>
         <section id="upload" class="flex">
             <span class="material-icons-round">file_upload</span>
-            <h1>Drag & Drop to upload or</h1>
+            <h1>To detect venemous or poisonous species. Drag & Drop to upload or</h1>
             <form id="form" action="" method="post">
                 <label class="button">
-                    <input id="input" type="file" accept="image/*" style="display: none" />
+                    <input id="input" type="file" accept=".png,.jpg,.jpeg" style="display: none" />
                     Choose Files
                 </label>
             </form>
+
             <div id="wrapper" class="flex">
+
                 <div id="left" class="flex">
                     <img src="uploads/USER_IMG" draggable="false" />
                     <div></div>
                     <img src="images/IMG_FOR_SPECIES" draggable="false" />
                 </div>
+
                 <div id="right" class="flex">
+
                     <em>MUSHROOM</em>
                     <h1>Amanita Phalloides</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis ipsam ipsum provident animi. Recusandae expedita officiis culpa cum, autem consectetur beatae eius maiores laborum, soluta aliquam similique, eveniet sint!</p>
@@ -108,11 +115,12 @@
                         </div>
                         <span class="material-icons-round">close</span>
                     </div>
-                    <a class="flex button" id="first-link">
+
+                    <a class="flex button" id="first-link" target="_blank">
                         <span class="material-icons-round">collections</span>
                         Images
                     </a>
-                    <a class="flex button">
+                    <a class="flex button" id="second-link" target="_blank">
                         <span class="material-icons-round">menu_book</span>
                         Articles
                     </a>
@@ -121,6 +129,11 @@
                     <h1>If bitten/consumed...</h1>
                     <p id="bitten">steps</p>
                 </div>
+
+            </div>
+            <div id="wrapper-error" class="flex">
+                <span class="material-icons-round">error</span>
+                <h1>Error! Subject not found in image or our AI was not confident enough. Please reload to try again.</h1>
             </div>
         </section>
         <section id="warn" class="flex">

@@ -1,117 +1,55 @@
-# Computer Vision Web Scaffold
-A scaffold for deploying dockerized flask applications.
+# ☠️ DetoxifAI
 
-If you have any questions, feel free to open an issue on [Github](https://github.com/organization-x/omni/issues).
+_Detecting venemous or posionous species in the wild_
 
-### Video Guide
-[![Deploy a Web Project with Flask](https://img.youtube.com/vi/JUb-PpejA7w/0.jpg)](https://youtu.be/JUb-PpejA7w "Deploy a Web Project with Flask")
+## 👀 What is it?
 
-This guide covers how you can quickly deploy most projects with the [Flask](https://flask.palletsprojects.com/) framework and our omni scaffold.
+DetoxifAI's main goal is protect people who arent knowledgable about the species they may encounter. For exmaple if you were walking in the woods and you wanted to check if a mushroom was edible or not, you could easily use DetoxifAI to find information and said species. Currently it focuses on commonly found California snake and mushrooms species.
 
-### Quickstart Guide for Local Development
+## ⚙️ How does it work?
 
-First clone this repository through 
+DetoxifAI uses the [YoloV5]() computer vision model to classify certain species using images uploaded by the user. Our AI was created like so:
 
-`https://github.com/organization-x/omni`
+-   Web scraping images of specific species of mushroom and snake we wanted to classify using [serp]()
+-   Label and filter through data found so we can get the images we will use for **training our model**
+-   Export our data and **augment it** so that it creates a stronger final model
+-   Train the model using [Google Colab]() and [Kaggle]() for superior speed GPUs. Adjusting hyperparameters and input data accordingly
+-   Create and frontend and also a backed using [flask]() for serving it to users, while also linking up our backend to [YoloV5]() and classifying each image uploaded by a user
 
-cd into the `/app` folder
+## 🚀 Usage
 
-`python3 -m pip install -r requirements.txt`
+To use DetoxifAI first clone this repo by running
 
-edit line 29 the `main.py` file to either the URL of the cocalc server you are on or `localhost` if you are running it on your own PC
+```sh
+git clone https://github.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI.git
+```
 
-Then, clone ultralytics yolov5 in the app folder, by running 
+Then change your terminal directory to the `SC22-BatchB-Flaming-Fuelers-DetoxifAI` folder and run (assuming you already have [Python]() installed)
 
-`git clone https://github.com/ultralytics/yolov5`
-`pip install -r yolov5/requirements.txt`
+```sh
+python ./app/main.py
+```
 
-Run
+Or, if you have multiple versions of python installed
 
- `python3 -m main`
+```sh
+python3 ./app/main.py
+```
 
-to start the server on local, most changes while developing will be picked up in realtime by the server
+This will intiate a flask server that will bind the URL to `localhost:1234`. Open your browser, go to this URL, and proceed to upload your images & get your results!
 
-### Quickstart Guide for Local Deployment
+This project is also able to run on [CoCalc]() and has been tested on there
 
-Make sure docker is installed on your system. Look that up if you don't know what that means.
+## 📈 Stats
 
-cd into the root director of the repo then run 
+More information can be found on this projects about page on the frontend, if you would like to view it, please follow the instructions above ([🚀 Usage](#-usage))
 
-`docker build -t omni .`
+### Final precision and recall
 
-once built, run
+**Precision:** `~0.97`
 
-`docker run -d -p 9000:80 --restart=unless-stopped --name omni omni`
+**Recall:** `~0.98`
 
-you should then be able to see the `omni` container running when you run 
+### Confusion Matrix and other images
 
-`docker ps -a`
-
-if it seems to be stuck (i.e. constantly listed as `Restarting`), something is wrong with the docker image or code inside causing it to repeatedly fail.
-
-you can start debugging the project by running 
-
-`docker logs -f omni` 
-
-or
-
-`docker exec -it omni /bin/bash` for an interactive bash terminal (this option only works if the container is running and not stuck in a restart loop)
-
-### Common Issues
-
-`$'\r': command not found` when attempting to start docker container
-
-this is caused by the the `entrypoint.sh` script somehow having CLRF line endings instead of LF line endings.
-
-to fix this run
-
-`sed -i 's/\r$//' entrypoint.sh`
-
-### File Structure
-The files/directories which you will need to edit are **bolded**
-
-**DO NOT TOUCH OTHER FILES. THIS MAY RESULT IN YOUR PROJECT BEING UNABLE TO RUN**
-
-- .gitignore
-- config.py
-- Dockerfile
-- READMD.md
-- entrypoint.sh
-- nginx_host
-- host_config
-- app/
-     - **main.py**
-     - **best.pt** <- you will need to upload this yourself after cloning the repo when developing the site
-     - **requirements.txt**
-     - **utils.py**
-     - templates/
-          - **index.html**
-
-### How to upload best.pt to your file structure?
-Run 
-`cp ../path/to/best.pt best.pt`
-### best.pt ###
-The weights file - must upload if you are running file on coding center or are trying to deploy.
-### main.py ###
-Contains the main flask app itself.
-### requirements.txt ###
-Contains list of packages and modules required to run the flask app. Edit only if you are using additional packages that need to be pip installed in order to run the project.
-
-To generate a requirements.txt file you can run
-
-`pip list --format=freeze > app/requirements.txt`
-
-the requirements.txt file will then be updated. Keep in mind: some packages you install on one operating system may not be available on another. You will have to debug and resolve this yourself if this is the case.
-### static/ ###
-Contains the static images, CSS, & JS files used by the flask app for the webpage. You will need to create this and put files in it. Place all your images used for your website in static/images/ so that you can then reference them in your html files.
-### utils.py ###
-Contains common functions used by the flask app. Put things here that are used more than once in the flask app.
-### templates/ ###
-Contains the HTML pages used for the webpage. Edit these to fit your project. index.html is the demo page.
-### Files used for deployment ###
-`config.py`
-`Dockerfile`
-`entrypoint.sh`
-`nginx_host`
-`host_config`
-**Only modify `host_config`. Do not touch the other files.**
+[![Deploy a Web Project with Flask](https://img.youtube.com/vi/JUb-PpejA7w/0.jpg)](https://youtu.be/JUb-PpejA7w 'Deploy a Web Project with Flask')
