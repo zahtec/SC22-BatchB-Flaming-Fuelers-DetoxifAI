@@ -16,8 +16,10 @@ DetoxifAI uses the [YoloV5](https://github.com/ultralytics/yolov5) computer visi
 -   Train the model using [Google Colab](https://colab.research.google.com) and [Kaggle](https://www.kaggle.com) for superior speed GPUs. Adjusting hyperparameters and input data accordingly
 -   Create and frontend and also a backed using [flask](https://flask.palletsprojects.com) for serving it to users, while also linking up our backend to [YoloV5](https://github.com/ultralytics/yolov5) and classifying each image uploaded by a user
 
-## 👏 Our Team
+## 👏 The Team
 
+-   Jinxuan: Proffesor
+-   Chase: Instrucor
 -   Toryn: Frontend Developer (me!)
 -   Michael: Backend Developer
 -   Arhant: Machine Learning Engineer
