@@ -53,8 +53,8 @@ const uploader = f => {
                 document.querySelector('#right > p').innerHTML = d.description;
                 document.querySelector('#first-param > span').innerHTML = d.poisonous ? 'check' : 'close';
                 document.querySelector('#second-param > div > span').innerHTML = d.type === 'snake' ? 'sentiment_very_dissatisfied' : 'whatshot';
-                document.querySelector('#second-param > div > p').innerHTML = d.type === 'snake' ? 'Aggresive' : 'Cookable';
-                document.querySelector('#second-param > span').innerHTML = d.cookable ? 'check' : 'close';
+                document.querySelector('#second-param > div > p').innerHTML = d.type === 'snake' ? 'Aggresive' : 'Edible';
+                document.querySelector('#second-param > span').innerHTML = d.edible ? 'check' : 'close';
                 document.getElementById('first-link').href = d.image;
                 document.getElementById('second-link').href = d.article;
                 document.getElementById('steps').innerText = d.steps ? d.steps : 'No preventative steps can be taken.';

@@ -87,7 +87,58 @@
           <h1>
             About Us
         </h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+
+    <img class="cover" src="images/toryn.jpg" style="width:100%">
+    <div class="text">Toryn Thompson: Frontend Developer</div>
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img class="cover"src="images/ayush1.jpg" style="width:100%">
+    <div class="text">Ayush Shah: Data Scientist</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img class="cover" src="images/michael.jpg" style="width:100%">
+    <div class="text">Michael Marsico: Backend Engineer</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img class="cover" src="images/arhant.png" style="width:100%">
+    <div class="text">Arhant Choudhary: Machine Learning Engineer</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img class="cover"src="images/sravya.png" style="width:100%">
+    <div class="text">Sravya Govindaraju: Data Scientist</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="images/jacky.jpg" style="width:100%">
+    <div class="text">Jacky Feng: Product Manager</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
 
 
             Thousands of people get bitten by snakes or ingest poisonous mushrooms. A lot of these situations could have been prevented or better dealt with. The secret to dealing with these situations is <b>Identification</b> and <b>Information</b>. DetoxifAI uses machine learning (Computer Vision) to identify the species of the photo you upload and then it provides information on the best preventive and treatment steps, along with helpful and interesting information. Through DetoxifAI, we hope you stay safe and poison-free!
@@ -102,7 +153,7 @@ Computer Vision is a program to detect/classify objects in an image through mach
 <div id="left">
             <img src="images/labels.png" >
           </div>
-          For our product, we input thousands of labeled images of snakes and mushrooms. Then we trained the AI to recognize patterns between the different species.
+          For our product, we input thousands of labeled images of snakes and mushrooms. Then we trained the AI model yolov5 to recognize patterns between the different species.
           <h1>
             Accuracy and Limitations
         </h1>
@@ -144,7 +195,7 @@ Western Diamondback Rattlesnake (Crotalus atrox)</li>
             <img src="images/confusion.png" >
 
           </div>
-Our model was trained on over 5,000 images of snakes and mushrooms for over 100 epochs (iterations). Our model consistently predicts the right species in the image with over 95% accuracy if it is one of our 21 chosen species.
+Our model was trained on over 5,000 images of snakes and mushrooms for over 100 epochs (iterations). Our model consistently predicts the right species in the image with over 95% accuracy if it is one of our 21 chosen species. However, there are many species we didn't train on and it may classify a snake that it hasn't been trained on.
 <div id="left">
 
             <img src="images/dataset.png" >
@@ -161,10 +212,19 @@ We added lots of augmented images that truly prepared our model for real-world a
 
 </div>
 To truly ensure that our model was robust we added many pictures of nature (dirt, plants, other reptiles, etc) to train our model to know when there is no target in the photo. This also made sure that the model didn’t mistake certain background textures for an organism.
-      </section>
+ <h1>
+      Information Sources
+ </h1>
+          <div style="text-align:center">
+          <a href="https://a-z-animals.com"><u>A-Z Animals</u><br></a>
+          <a href="https://www.nationalgeographic.com"><u>National Geographic</u><br></a>
+          <a href="http://bayareamushrooms.org"><u>Bay Area Mushrooms</u><br></a>
+          <a href="https://www.wikipedia.org"><u>Wikipedia<br></u></a>
+          <a href="https://animaldiversity.org"><u>Animal Diversity<br></u></a>
+          <a href="https://www.healthline.com"><u>Healthline<br></u></a>
 
-
-
+  </div>
+      </section> 
         <footer>
             <a id="github" href="https://github.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI">
                 <img id="github" src="images/github.png" draggable="false" />

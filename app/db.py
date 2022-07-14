@@ -10,7 +10,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Masticophis_flagellum.jpg",
         "article": "https://en.wikipedia.org/wiki/Masticophis_flagellum"
     },
-
     "Crotalus atrox": {
         "species": "Crotalus Atrox",
         "type": "Snake",
@@ -22,7 +21,6 @@ db = {
         "image": "https://live.staticflickr.com/3870/14688594389_3cd92a0323_b.jpg",
         "article": "https://en.wikipedia.org/wiki/Western_diamondback_rattlesnake"
     },
-
     "Crotalus Oreganus": {
         "species": "Crotalus Oreganus",
         "type": "Snake",
@@ -34,7 +32,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crotalus_oreganus.jpg/220px-Crotalus_oreganus.jpg",
         "article": "https://en.wikipedia.org/wiki/Crotalus_oreganus"
     },
-
     "Pituophis catenifer": {
         "species": "Pituophis Catenifer",
         "type": "Snake",
@@ -46,7 +43,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pituophis_catenifer_catenifer_%28Carrizo_Plain%29.jpg/220px-Pituophis_catenifer_catenifer_%28Carrizo_Plain%29.jpg",
         "article": "https://a-z-animals.com/animals/gopher-snake/#single-animal-text"
     },
-
     "Lampropeltis getula californiae": {
         "species": "Lampropeltis Getula Californiae",
         "type": "Snake",
@@ -58,7 +54,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/California_Kingsnake_%28Lampropeltis_getula_californiae%29.JPG/220px-California_Kingsnake_%28Lampropeltis_getula_californiae%29.JPG",
         "article": "https://a-z-animals.com/blog/are-kingsnakes-poisonous-or-dangerous/"
     },
-
     "Coluber constrictor": {
         "species": "Coluber Constrictor",
         "type": "Snake",
@@ -70,7 +65,6 @@ db = {
         "image": "https://www. ps.gov/chis/learn/nature/images/960-2788698914_c262958545_o.jpg?maxwidth=650&autorotate=False",
         "article": "https://en.wikipedia.org/wiki/Eastern_racer"
     },
-
     "Diadophis punctatus": {
         "species": "Diadophis Punctatus",
         "type": "Snake",
@@ -82,7 +76,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Coral-belly_Ringneck_Snake_%28Diadophis_punctatus_ssp._pulchellus%29.jpg/220px-Coral-belly_Ringneck_Snake_%28Diadophis_punctatus_ssp._pulchellus%29.jpg",
         "article": "https://a-z-animals.com/blog/are-ringneck-snakes-poisonous-or-dangerous/"
     },
-
     "Thamnophis sauritus septentrionalis": {
         "species": "Thamnophis Sauritus Septentrionalis",
         "type": "Snake",
@@ -94,7 +87,6 @@ db = {
         "image": "https://live.staticflickr.com/3702/10154493195_6ff2a0c852_b.jpg",
         "article": "https://a-z-animals.com/animals/ribbon-snake/#single-animal-text"
     },
-
     "Contia tenuis": {
         "species": "Contia Tenuis",
         "type": "Snake",
@@ -106,7 +98,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Contia_tenuis_%28San_Luis_Obispo%29.jpg/220px-Contia_tenuis_%28San_Luis_Obispo%29.jpg",
         "article": "https://a-z-animals.com/animals/sharp-tailed-snake/#single-animal-text"
     },
-
     "Charina bottae": {
         "species": "Charina Bottae",
         "type": "Snake",
@@ -118,7 +109,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Charina_bottae_on_towel.jpg/220px-Charina_bottae_on_towel.jpg",
         "article": "https://a-z-animals.com/animals/rubber-boa/#single-animal-text"
     },
-
     "Craterellus cornucopioides": {
         "species": "Craterellus Cornucopioides",
         "type": "Mushroom",
@@ -130,7 +120,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Craterellus_cornucopioides_JPG1.jpg/234px-Craterellus_cornucopioides_JPG1.jpg",
         "article": "https://en.wikipedia.org/wiki/Craterellus_cornucopioides"
     },
-
     "Sparassis radicata": {
         "species": "Sparassis Radicata",
         "type": "Mushroom",
@@ -142,7 +131,6 @@ db = {
         "image": "https://www.mykoweb.com/CAF/photos/large/Sparassis_radicata%28bw_t5-073%29.jpg",
         "article": "https://en.wikipedia.org/wiki/Sparassis"
     },
-
     "Morchella rufobrunnea": {
         "species": "Morchella Rufobrunnea",
         "type": "Mushroom",
@@ -154,7 +142,6 @@ db = {
         "image": "https://s3-us-west-2.amazonaws.com/northernbushcraft.com/mushrooms/_blushing_morel/1.jpg",
         "article": "https://en.wikipedia.org/wiki/Morchella_rufobrunnea"
     },
-
     "Cantharellus formosus": {
         "species": "Cantharellus Formosus",
         "type": "Mushroom",
@@ -166,7 +153,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cantharellus_formosus_174975_Belfair.jpg/1200px-Cantharellus_formosus_174975_Belfair.jpg",
         "article": "https://en.wikipedia.org/wiki/Cantharellus_formosus"
     },
-
     "Leccinum manzanitae": {
         "species": "Leccinum Manzanitae",
         "type": "Mushroom",
@@ -178,7 +164,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Leccinum_manzanitae_29496_crop.jpg",
         "article": "https://en.wikipedia.org/wiki/Leccinum_manzanitae"
     },
-
     "Agaricus bernardii": {
         "species": "Agaricus Bernardii",
         "type": "Mushroom",
@@ -190,7 +175,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/2011-12-02_Agaricus_bernardii_Qu%C3%A9l_187343.jpg",
         "article": "https://en.wikipedia.org/wiki/Agaricus_bernardii"
     },
-
     "Amanita phalloides": {
         "species": "Amanita Phalloides",
         "type": "Mushroom",
@@ -202,7 +186,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Amanita_phalloides_1.JPG/220px-Amanita_phalloides_1.JPG",
         "article": "Amanita phalloides - Wikipedia"
     },
-
     "Coprinopsis picacea": {
         "species": "Coprinopsis Picacea",
         "type": "Mushroom",
@@ -214,7 +197,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coprinopsis_picacea_12184.jpg/220px-Coprinopsis_picacea_12184.jpg",
         "article": "Coprinopsis picacea - Wikipedia"
     },
-
     "Amanita muscaria": {
         "species": "Amanita Muscaria",
         "type": "Mushroom",
@@ -226,7 +208,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/220px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg",
         "article": "Amanita muscaria - Wikipedia"
     },
-
     "Omphalotus olearius": {
         "species": "Omphalotus Olearius",
         "type": "Mushroom",
@@ -238,7 +219,6 @@ db = {
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Omphalotus_olearus.png/220px-Omphalotus_olearus.png",
         "article": "Omphalotus olearius - Wikipedia"
     },
-
     "Micrurus fulvius": {
         "species": "Micrurus Fulvius",
         "type": "Snake",
@@ -250,7 +230,6 @@ db = {
         "image": "https://a-z-animals.com/media/2022/04/Eastern-Coral-Snake-on-the-ground.jpg",
         "article": "https://a-z-animals.com/animals/eastern-coral-snake/#single-animal-text"
     },
-
     "Agkistrodon contortrix": {
         "species": "Agkistrodon Contortrix",
         "type": "Snake",
