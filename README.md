@@ -18,7 +18,7 @@ DetoxifAI uses the [YoloV5](https://github.com/ultralytics/yolov5) computer visi
 
 ## 👏 The Team
 
--   Jinxuan: Proffesor
+-   Jinxuan: Professor
 -   Chase: Instrucor
 -   Toryn: Frontend Developer (me!)
 -   Michael: Backend Developer
