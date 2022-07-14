@@ -67,8 +67,6 @@ More information can be found on this projects about page on the frontend, if yo
 
 ![DetoxifAI roboflow image totals](https://raw.githubusercontent.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI/main/app/static/images/dataset.png)
 
-![DetoxifAI roboflow image totals](https://raw.githubusercontent.com/zahtec/SC22-BatchB-Flaming-Fuelers-DetoxifAI/main/app/static/images/dataset.png)
-
 ## 🙂 Thanks for viewing!
 
 This was made at [Stanford AI Camp](https://www.ai-camp.org). Where seers become beleivers, get a chance to participate in a super cool camp and get a possible intership at AI Camp, linked above!
