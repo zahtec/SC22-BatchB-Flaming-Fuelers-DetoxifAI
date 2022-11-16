@@ -69,4 +69,4 @@ More information can be found on this projects about page on the frontend, if yo
 
 ## 🙂 Thanks for viewing!
 
-This was made at [AI Camp](https://www.ai-camp.org). Where seers become beleivers, get a chance to participate in a super cool camp and get a possible intership at AI Camp, linked above!
+This was made at [AI Camp](https://www.ai-camp.org). Where seers become beleivers, get a chance to participate in a super cool camp and get a possible internship at AI Camp, linked above!
